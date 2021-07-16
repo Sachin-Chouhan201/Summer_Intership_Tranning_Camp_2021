@@ -124,7 +124,7 @@ const name = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const phoneNumber = document.getElementById("phoneNumber");
-const DoB = document.getElementById("DOB");
+const DoB = document.getElementById("DOB.getFullYear()");
 const gender = document.registration;
 const language = document.getElementById("language");
 const zipcode = document.getElementById("zipcode");
@@ -149,9 +149,9 @@ function formValidation() {
     return false;
   }
   //checking Date Of Birth
-  if( DoB== "" )
+  if( DoB>=2005 )
    {
-     alert( "Enter your DOB!" );
+     alert( "Your Are Not Eligible Your Age is less Try Next year!" );
      form.dob.focus() ;
      return;
    }
